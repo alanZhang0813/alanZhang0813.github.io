@@ -1,4 +1,4 @@
-import Nav from "../Navigate/Nav";
+import Nav from "../../Navigate/Nav";
 import "./MyGames.css"
 import "../../styles.css"
 import ChessBoardViewer from "./ChessBoardViewer";
@@ -12,7 +12,7 @@ function MyGames() {
             <div className="main-page">
                 An archive of my chess games
             </div>
-            <ChessBoardViewer pgn={pgn}/>
+            {/* <ChessBoardViewer pgn={pgn}/> */}
         </div>
     )
 }

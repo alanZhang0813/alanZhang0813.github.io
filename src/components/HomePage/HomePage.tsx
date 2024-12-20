@@ -1,11 +1,11 @@
 import React from 'react';
 import './HomePage.css';
 import '../../styles.css'
-import Nav from "../Navigate/Nav";
+import Nav from "../../Navigate/Nav";
 
 function HomePage() {
   return (
-      <div className={"page"} style={{backgroundColor: "transparent"}}>
+      <div className={"page"}>
           <Nav/>
           <div className={"Homepage"}>
               <div className={"title-header"}>

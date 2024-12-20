@@ -27,8 +27,7 @@ function Nav() {
             <div className={`menu-items ${menuOpen ? "open" : ""}`}>
                 <Link to="/HomePage" className={`nav-link ${pathname.includes("HomePage") ? "active" : ""}`}>Home Page</Link>
                 <Link to="/AboutMe" className={`nav-link ${pathname.includes("AboutMe") ? "active" : ""}`}>About Me</Link>
-                <Link to="/Contact" className={`nav-link ${pathname.includes("Contact") ? "active" : ""}`}>Contact</Link>
-                <Link to="/Scrapbook" className={`nav-link ${pathname.includes("Scrapbook") ? "active" : ""}`}>Scrapbook</Link>
+                <Link to="/Portfolio" className={`nav-link ${pathname.includes("Portfolio") ? "active" : ""}`}>Portfolio</Link>
                 <Link to="/ReadingList" className={`nav-link ${pathname.includes("ReadingList") ? "active" : ""}`}>Reading List</Link>
                 <Link to="/ChallengeMe" className={`nav-link ${pathname.includes("ChallengeMe") ? "active" : ""}`}>Challenge Me!</Link>
                 <Link to="/MyGames" className={`nav-link ${pathname.includes("MyGames") ? "active" : ""}`}>My Games</Link>

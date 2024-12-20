@@ -1,4 +1,4 @@
-import Nav from "../Navigate/Nav";
+import Nav from "../../Navigate/Nav";
 
 function ChallengeMe() {
     return(

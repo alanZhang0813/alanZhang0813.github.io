@@ -4,5 +4,44 @@
 }
 
 .name-card {
+    background-color: rgb(253, 246, 245);
+    color: black;
+    font-family: Garamond, serif;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 329px; /* Matches your image width */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
+.name-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+.name-card img {
+    border-radius: 4px; /* Slight rounding of image corners */
+    margin-bottom: 10px;
+}
+
+.name-card p {
+    margin: 5px 0;
+    font-size: 14px; /* Slightly smaller text for a professional look */
+    font-weight: 400; /* Regular font weight for text */
+}
+
+.name-card button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.name-card button:hover {
+    color: gray; /* Subtle hover effect for button */
 }
