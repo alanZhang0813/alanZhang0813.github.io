@@ -10,7 +10,7 @@ type NameCardProps = {
   };
 
 function NameCard({ profilePic, name, age, major }: NameCardProps) {
-    const [active, setActive] = useState(true)
+    const [active, setActive] = useState(false)
 
     const toggleActive = () => {
         setActive(!active)
@@ -18,12 +18,21 @@ function NameCard({ profilePic, name, age, major }: NameCardProps) {
 
     return (
         <div className="name-card">
-            <img src={profilePic} width={329} height={366} alt={"Profile"}/>
-            <p>Name: {name}</p>
-            <p>Age: {age}</p>
-            <p>Major: {major}</p>
-
-            <button onClick={toggleActive}>
+            {!active && (
+                <div className="card-preview">
+                    <p>My Card</p>
+                </div>
+            )}
+            
+            {active && (
+                <div className="card-details">
+                    <img src={profilePic} alt={"Profile"}/>
+                    <p>Name: {name}</p>
+                    <p>Age: {age}</p>
+                    <p>Major: {major}</p>
+                </div>
+            )}
+            <button className="toggle-button" onClick={toggleActive}>
                 {active ? <FaMinus/> : <FaPlus/>}
             </button>
         </div>

@@ -7,6 +7,7 @@ function AboutMe() {
     return(
         <div className={"page"}>
             <Nav/>
+            <NameCard profilePic={`${process.env.PUBLIC_URL}/new pfp.jpg`} name={"Alan Zhang"} age={20} major={"Computer Science"}/>
             <div className={"d-flex"} style={{margin: "5px 5px"}}>
                 <div className={"d-flex flex-row"}>
                     {/* <div className={"d-flex flex-column"}>
@@ -15,7 +16,6 @@ function AboutMe() {
                     <div className={"d-flex flex-column"}>
                         <span style={{fontSize: "100px"}}>This is me</span>
                     </div>
-                    <NameCard profilePic={`${process.env.PUBLIC_URL}/new pfp.jpg`} name={"Alan Zhang"} age={20} major={"Computer Science"}/>
                     
                     <p>Here's some stuff I do</p>
                 </div>

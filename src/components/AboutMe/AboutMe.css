@@ -8,7 +8,8 @@
     color: black;
     font-family: Garamond, serif;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    width: 329px; /* Matches your image width */
+    width: 60%; /* Image width for responsiveness */
+    max-width: 700px; /* Max image width */
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     margin: 20px auto;
@@ -24,6 +25,8 @@
 .name-card img {
     border-radius: 4px; /* Slight rounding of image corners */
     margin-bottom: 10px;
+    width: 40%;
+    height: auto;
 }
 
 .name-card p {
@@ -44,4 +47,24 @@
 
 .name-card button:hover {
     color: gray; /* Subtle hover effect for button */
+}
+
+.card-preview p {
+    font-size: 50px;
+}
+
+.card-details {
+    margin-top: 12px;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

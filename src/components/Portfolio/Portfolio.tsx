@@ -1,39 +1,42 @@
 import Nav from "../../Navigate/Nav"
 import Project from "./Project"
+import { ProjectProps } from "./Project"
 import "../../styles.css"
+import "./Portfolio.css"
 
 function Portfolio() {
-    const projects = [
-        Project (
-            "husksheets-image",
-            "Husksheets",
-            "Google Sheets recreation",
-            ["T3 Stack", "TypeScript", "NodeJS", "Prisma", "PlanetScale"],
-            "6/2024",
-            "7/2024",
-            "url"
-        ),
-        Project (
-            "under-the-weather-image",
-            "Under the Weather",
-            "Disease data visualization full-stack project",
-            ["TypeScript", "Python", "MySQL"],
-            "6/2024",
-            "7/2024",
-            "url"
-        )
+    const projects: ProjectProps[] = [
+        {
+            previewImage: "husksheets-image",
+            title: "Husksheets",
+            description: "Google Sheets recreation",
+            technologies: ["T3 Stack", "TypeScript", "NodeJS", "Prisma", "PlanetScale"],
+            startDate: "6/2024",
+            endDate: "7/2024",
+            link: "url"
+        },
+        {
+            previewImage: "under-the-weather-image",
+            title: "Under the Weather",
+            description: "Disease data visualization full-stack project",
+            technologies: ["TypeScript", "Python", "MySQL"],
+            startDate: "6/2024",
+            endDate: "7/2024",
+            link: "url"
+        }
     ]
 
     return (
         <div className="page">
-            <Nav/>
-            <table>
+            <Nav />
+            <table className="portfolio-table">
                 <tbody>
                     <tr>
-                        {/* {projects.map(project)} */}
-                        <td>
-                            {/* <Project/> */}
-                        </td>
+                        {projects.map((project, index) => (
+                            <td key={index}>
+                                <Project {...project} />
+                            </td>
+                        ))}
                     </tr>
                 </tbody>
             </table>
