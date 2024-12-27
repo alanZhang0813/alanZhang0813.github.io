@@ -33,19 +33,23 @@ const Project = ({
                 <h2>{title}</h2>
                 <button>{active ? <FaMinus /> : <FaPlus />}</button>
             </div>
-            <div className={`project-body ${active ? "active" : ""}`}>
-                <img src={previewImage} alt={`${title} project preview`} />
-                <p>{description}</p>
-                <p className="technologies">
-                    Technologies: {technologies.join(", ")}
-                </p>
-                <p>
-                    Duration: {startDate} - {endDate}
-                </p>
-                <a href={link} target="_blank" rel="noopener noreferrer">
-                    Project Link
-                </a>
-            </div>
+
+            {active && (
+                <div className={`project-body ${active ? "active" : ""}`}>
+                    <img src={previewImage} alt={`${title} project preview`} />
+                    <p>{description}</p>
+                    <p className="technologies">
+                        Technologies: {technologies.join(", ")}
+                    </p>
+                    <p>
+                        Duration: {startDate} - {endDate}
+                    </p>
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                        Project Link
+                    </a>
+                </div>
+            )}
+
         </div>
     );
 };
