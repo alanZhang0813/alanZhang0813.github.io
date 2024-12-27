@@ -55,6 +55,7 @@
 .project-body p {
   margin: 8px 0;
   font-size: 1rem;
+  color: rgb(223, 216, 216)
 }
 
 .project-body .technologies {
