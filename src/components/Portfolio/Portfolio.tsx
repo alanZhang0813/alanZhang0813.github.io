@@ -23,25 +23,73 @@ function Portfolio() {
             startDate: "6/2024",
             endDate: "7/2024",
             link: "url"
-        }
+        },
+        {
+            previewImage: "husksheets-image",
+            title: "Husksheets",
+            description: "Google Sheets recreation",
+            technologies: ["T3 Stack", "TypeScript", "NodeJS", "Prisma", "PlanetScale"],
+            startDate: "6/2024",
+            endDate: "7/2024",
+            link: "url"
+        },
+        {
+            previewImage: "husksheets-image",
+            title: "Husksheets",
+            description: "Google Sheets recreation",
+            technologies: ["T3 Stack", "TypeScript", "NodeJS", "Prisma", "PlanetScale"],
+            startDate: "6/2024",
+            endDate: "7/2024",
+            link: "url"
+        },
+        {
+            previewImage: "husksheets-image",
+            title: "Husksheets3",
+            description: "Google Sheets recreation",
+            technologies: ["T3 Stack", "TypeScript", "NodeJS", "Prisma", "PlanetScale"],
+            startDate: "6/2024",
+            endDate: "7/2024",
+            link: "url"
+        },
+        {
+            previewImage: "husksheets-image",
+            title: "Husksheets2",
+            description: "Google Sheets recreation",
+            technologies: ["T3 Stack", "TypeScript", "NodeJS", "Prisma", "PlanetScale"],
+            startDate: "6/2024",
+            endDate: "7/2024",
+            link: "url"
+        },
+        {
+            previewImage: "husksheets-image",
+            title: "Husksheets1",
+            description: "Google Sheets recreation",
+            technologies: ["T3 Stack", "TypeScript", "NodeJS", "Prisma", "PlanetScale"],
+            startDate: "6/2024",
+            endDate: "7/2024",
+            link: "url"
+        },
     ]
 
     return (
         <div className="page">
             <Nav />
-            <table className="portfolio-table">
-                <tbody>
-                    <tr>
-                        {projects.map((project, index) => (
-                            <td key={index}>
-                                <Project {...project} />
-                            </td>
-                        ))}
-                    </tr>
-                </tbody>
-            </table>
+            <div className="portfolio-container">
+                {projects.map((project, index) => (
+                    <Project
+                        key={index}
+                        previewImage={project.previewImage}
+                        title={project.title}
+                        description={project.description}
+                        technologies={project.technologies}
+                        startDate={project.startDate}
+                        endDate={project.endDate}
+                        link={project.link}
+                    />
+                ))}
+            </div>
         </div>
-    )
+    );
 }
 
 export default Portfolio

@@ -1,89 +1,95 @@
 .project-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin: 16px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-  
-  .project-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px;
-    background-color: #f7f7f7;
-    cursor: pointer;
-  }
-  
-  .project-header h2 {
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  
-  .project-header button {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #007bff;
-    transition: color 0.2s;
-  }
-  
-  .project-header button:hover {
-    color: #0056b3;
-  }
-  
-  .project-body {
-    padding: 16px;
-    display: none;
-  }
-  
-  .project-body img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-bottom: 12px;
-    border-radius: 4px;
-  }
-  
-  .project-body p {
-    margin: 8px 0;
-    font-size: 1rem;
-  }
-  
-  .project-body .technologies {
-    font-weight: bold;
-  }
-  
-  .project-body a {
-    color: #007bff;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .project-body a:hover {
-    text-decoration: underline;
-  }
-  
-  .project-body.active {
-    display: block;
-  }
-  
-  .portfolio-table {
-    width: 100%;
-    table-layout: auto;
-    border-collapse: collapse;
-    margin: 0 auto;
-  }
-  
-  .portfolio-table td {
-    vertical-align: top;
-    padding: 16px;
-  }
-  
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.project-header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.project-header button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.2s;
+}
+
+.project-header button:hover {
+  color: #0056b3;
+}
+
+.project-body {
+  padding: 16px;
+  display: none;
+}
+
+.project-body img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.project-body p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.project-body .technologies {
+  font-weight: bold;
+}
+
+.project-body a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.project-body a:hover {
+  text-decoration: underline;
+}
+
+.project-body.active {
+  display: block;
+}
+
+.portfolio-table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.portfolio-table td {
+  vertical-align: top;
+  padding: 16px;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
