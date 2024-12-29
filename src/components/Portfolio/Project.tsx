@@ -45,7 +45,7 @@ const Project = ({
                         Duration: {startDate} - {endDate}
                     </p>
                     <a href={link} target="_blank" rel="noopener noreferrer">
-                        Project Link
+                        Link to GitHub Repository
                     </a>
                 </div>
             )}
