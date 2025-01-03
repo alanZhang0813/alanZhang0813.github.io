@@ -1,70 +1,45 @@
-.description {
-    color: aliceblue;
-    margin: 10px;
+.about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .name-card {
-    background-color: rgb(253, 246, 245);
-    color: black;
-    font-family: Garamond, serif;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    width: 60%; /* Image width for responsiveness */
-    max-width: 700px; /* Max image width */
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 20px auto;
+    background-color: #282828; /* Slightly lighter dark for contrast */
+    color: #f5f5f5;
+    border: 1px solid #444;
+}
+
+.about-me-content {
     text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 600px;
 }
 
-.name-card:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+.about-me-heading {
+    font-size: 3rem;
+    color: #e0e0e0; /* Softer white */
+    margin-bottom: 15px;
 }
 
-.name-card img {
-    border-radius: 4px; /* Slight rounding of image corners */
-    margin-bottom: 10px;
-    width: 40%;
-    height: auto;
+.description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 0;
+    color: #cfcfcf; /* Subtle light gray */
 }
 
-.name-card p {
-    margin: 5px 0;
-    font-size: 14px; /* Slightly smaller text for a professional look */
-    font-weight: 400; /* Regular font weight for text */
-}
-
-.name-card button {
-    background: none;
-    border: none;
-    color: black;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: color 0.3s ease-in-out;
-}
-
-.name-card button:hover {
-    color: gray; /* Subtle hover effect for button */
-}
-
-.card-preview p {
-    font-size: 50px;
-}
-
-.card-details {
-    margin-top: 12px;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-  
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
+@media (max-width: 768px) {
+    .about-me-container {
+        flex-direction: column;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    .about-me-heading {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
     }
 }
