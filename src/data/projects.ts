@@ -16,15 +16,15 @@ export const projects: Project[] = [
         technologies: ["T3 Stack", "TypeScript", "NodeJS", "Prisma", "PlanetScale"],
         startDate: "6/2024",
         endDate: "7/2024",
-        link: "url"
+        link: "https://github.com/IAmBdan/computer-serve-code"
     },
     {
         previewImage: "under-the-weather-image",
         title: "Under the Weather",
         description: "Disease data visualization full-stack project",
         technologies: ["TypeScript", "Python", "MySQL"],
-        startDate: "6/2024",
-        endDate: "7/2024",
-        link: "url"
+        startDate: "2/2024",
+        endDate: "2/2024",
+        link: "https://github.com/alanZhang0813/under-the-weather"
     },
 ];

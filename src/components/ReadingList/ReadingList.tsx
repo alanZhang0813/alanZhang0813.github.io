@@ -14,6 +14,7 @@ function ReadingList() {
                         key={index}
                         previewImage={book.previewImage}
                         title={book.title}
+                        genre={book.genre}
                         author={book.author}
                         rating={book.rating}
                         review={book.review}

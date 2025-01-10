@@ -6,6 +6,7 @@ export type BookEntryProps = {
     previewImage: string;
     title: string;
     author: string;
+    genre: string;
     rating: number;
     review: string;
 };
@@ -14,6 +15,7 @@ const BookEntry = ({
     previewImage,
     title,
     author,
+    genre,
     rating,
     review,
 }: BookEntryProps) => {
@@ -32,11 +34,12 @@ const BookEntry = ({
 
             {active && (
                 <div className={`book-body ${active ? "active" : ""}`}>
-                    <img
+                    {/* <img
                         src={previewImage}
                         alt={`${title} Cover by ${author}`}
-                    />
+                    /> */}
                     <p>Author: {author}</p>
+                    <p>Genre: {genre}</p>
                     <p className="rating">
                         Rating: {rating} <FaStar />
                     </p>

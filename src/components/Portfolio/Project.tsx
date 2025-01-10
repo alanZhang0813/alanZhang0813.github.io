@@ -36,7 +36,7 @@ const Project = ({
 
             {active && (
                 <div className={`project-body ${active ? "active" : ""}`}>
-                    <img src={previewImage} alt={`${title} project preview`} />
+                    {/* <img src={previewImage} alt={`${title} project preview`} /> */}
                     <p>{description}</p>
                     <p className="technologies">
                         Technologies: {technologies.join(", ")}
