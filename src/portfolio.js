@@ -33,8 +33,8 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
+  github: "https://github.com/alanZhang0813",
+  linkedin: "https://www.linkedin.com/in/alanlzhang/",
   gmail: "alanzhang3434@gmail.com",
   instagram: "https://www.instagram.com/alanzhangatang/",
   chess_dot_com: "https://www.chess.com/member/alanzhang",
