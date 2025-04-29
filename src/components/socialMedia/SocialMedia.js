@@ -127,6 +127,18 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+
+      {socialMediaLinks.chess_dot_com ? (
+        <a
+          href={socialMediaLinks.chess_dot_com}
+          className="icon-button chess_dot_com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fas fa-chess-pawn"></i>
+          <span></span>
+        </a>
+      ) : null}
     </div>
   );
 }
