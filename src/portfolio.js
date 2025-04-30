@@ -62,9 +62,7 @@ const skillsSection = {
     emoji(
       "⚡ Implement secure authentication, authorization, and data handling across client-server architectures."
     ),
-    emoji(
-      "⚡ Playing a bunch of chess"
-    )
+    emoji("⚡ Playing a bunch of chess")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -114,7 +112,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "swift",
       fontAwesomeClassname: "fab fa-swift"
-    },
+    }
     // {
     //   skillName: "docker",
     //   fontAwesomeClassname: "fab fa-docker"
@@ -181,9 +179,7 @@ const workExperiences = {
       company: "UKG",
       companylogo: require("./assets/images/ukgLogo-1.png"),
       date: "May 2025 – August 2025",
-      descBullets: [
-        
-      ]
+      descBullets: []
     },
     {
       role: "Software Developer Intern",
@@ -206,9 +202,9 @@ const workExperiences = {
       descBullets: [
         "Mentor students in computer science, algorithms, and data structures, fostering a deeper understanding of key concepts.",
         "Simplify and convey complex computing concepts, ensuring accessibility for diverse learning styles.",
-        "Lead research in andragogy, conducting data collection to inform and enhance teaching strategies for adult learners.",
+        "Lead research in andragogy, conducting data collection to inform and enhance teaching strategies for adult learners."
       ]
-    },
+    }
   ]
 };
 
