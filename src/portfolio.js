@@ -181,20 +181,34 @@ const workExperiences = {
       company: "UKG",
       companylogo: require("./assets/images/ukgLogo-1.png"),
       date: "May 2025 – August 2025",
-      desc: ""
+      descBullets: [
+        
+      ]
     },
     {
       role: "Software Developer Intern",
       company: "Saint-Gobain Performance Plastics",
       companylogo: require("./assets/images/saint-gobainLogo.png"),
       date: "June 2024 – December 2024",
-      desc: `
-• Engineered a real-time tracking system in Ignition (Java + Python) to close a critical data gap.
-• Designed an intuitive interface for machine performance monitoring, driving long-term adoption.
-• Collaborated with cross-functional teams to redesign information displays, providing actionable operational insights.
-• Optimized plant-wide software through rigorous code reviews, enhancing efficiency and documentation.
-• Reduced time data discrepancies by 35%, saving over 20 hours per week and improving manufacturing efficiency.`
-    }
+      descBullets: [
+        "Engineered a real-time tracking system in Ignition (Java + Python) to close a critical data gap.",
+        "Designed an intuitive interface for machine performance monitoring, driving long-term adoption.",
+        "Collaborated with cross-functional teams to redesign information displays, providing actionable operational insights.",
+        "Optimized plant-wide software through rigorous code reviews, enhancing efficiency and documentation.",
+        "Reduced time data discrepancies by 35%, saving over 20 hours per week and improving manufacturing efficiency."
+      ]
+    },
+    {
+      role: "Knack Peer Tutor",
+      company: "Northeastern University",
+      companylogo: require("./assets/images/knackLogo.png"),
+      date: "June 2024 – December 2024",
+      descBullets: [
+        "Mentor students in computer science, algorithms, and data structures, fostering a deeper understanding of key concepts.",
+        "Simplify and convey complex computing concepts, ensuring accessibility for diverse learning styles.",
+        "Lead research in andragogy, conducting data collection to inform and enhance teaching strategies for adult learners.",
+      ]
+    },
   ]
 };
 
