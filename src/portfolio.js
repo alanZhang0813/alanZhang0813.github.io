@@ -26,7 +26,7 @@ const greeting = {
     "A passionate computer science student 🧑‍💻 with experience building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native / Expo Router as well as working in the backend with Java and Python. I like learning about cool libraries and frameworks!"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1an9fObYk00f5slwMAL9f6jZaMAwGT7vy/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
