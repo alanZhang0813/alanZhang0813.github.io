@@ -45,7 +45,6 @@ export default function Greeting() {
                     href={"/alan_zhang_resume.pdf"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    download="alan_zhang_resume.pdf"
                     className="download-link-button"
                   >
                     <Button text="Download my resume" />
