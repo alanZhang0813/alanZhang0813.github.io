@@ -52,7 +52,7 @@ const Main = () => {
             <WorkExperience />
             <Projects />
             <Profile />
-            <Footer />
+            {/* <Footer /> */}
             <ScrollToTopButton />
           </>
         )}

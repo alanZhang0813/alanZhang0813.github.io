@@ -38,11 +38,6 @@ const socialMediaLinks = {
   gmail: "alanzhang3434@gmail.com",
   instagram: "https://www.instagram.com/alanzhangatang/",
   chess_dot_com: "https://www.chess.com/member/alanzhang",
-  // gitlab: "https://gitlab.com/saadpasta",
-  // facebook: "https://www.facebook.com/saad.pasta7",
-  // medium: "https://medium.com/@saadpasta",
-  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
@@ -102,7 +97,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-npm"
     },
     {
-      skillName: "C, C++",
+      skillName: "C, C++, C#",
       fontAwesomeClassname: "fas fa-code"
     },
     {
@@ -171,11 +166,26 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Software Engineering Intern",
+      company: "FactSet Research Systems",
+      companylogo: require("./assets/images/factsetLogo.png"),
+      date: "September 2025 – December 2025",
+      descBullets: [
+        "Developed an automated comment generation tool using C# and .NET to help financial writers analyze data.",
+        "Collaborated with content writers and designers to improve financial data accuracy and website presentation.",
+        "Leveraged SQL and database management to enhance data accuracy and support analytics for financial content teams."
+      ]
+    },
+    {
       role: "Software Engineer Intern",
       company: "UKG",
       companylogo: require("./assets/images/ukgLogo-1.png"),
       date: "May 2025 – August 2025",
-      descBullets: []
+      descBullets: [
+        "Used Gemini API and Vertex AI to automate the migration of legacy SoapUI tests to REST Assured, improving maintainability and CI/CD efficiency.",
+        "Integrated automated test pipelines with Jenkins to streamline build verification and regression testing.",
+        "Performed API backend testing and participated in peer code reviews to improve test coverage and ensure reliability."
+      ]
     },
     {
       role: "Software Developer Intern",
@@ -223,13 +233,12 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+  subtitle: "",
   number: "+1 484-506-7558",
   email_address: "alanzhang3434@gmail.com"
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
