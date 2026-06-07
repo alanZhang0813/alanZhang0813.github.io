@@ -12,6 +12,11 @@ on:
       - master
   schedule:
     - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
+
+# Allow the GITHUB_TOKEN to push the built site to the gh-pages branch.
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
