@@ -1,0 +1,35 @@
+{
+  "name": "alanzhang0813.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "tsx --watch src/index.ts",
+    "build": "npm run clean && tsc",
+    "start": "npm run build && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alan Zhang",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanZhang0813/alanZhang0813.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alanZhang0813/alanZhang0813.github.io/issues"
+  },
+  "homepage": "https://github.com/alanZhang0813/alanZhang0813.github.io#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
