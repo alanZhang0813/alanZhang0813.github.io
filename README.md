@@ -18,3 +18,13 @@ Personal website
 - Navigation
 - Breadcrumb with back and forward arrows
 - Every click opens a new window and can be closed
+
+## Implementation Detail:
+
+### Either:
+
+- Each folder is its own component with individual files stored as a list inside, and file is its own component with information.
+- Home page contains a list of folders, each folder contains a list of files
+  - There exists... a map? to keep track of relations
+    - could incorporate databases and keys to retrieve the info
+  - Shared functionality across files/folders (dragging, renaming, etc)
