@@ -28,3 +28,4 @@ Personal website
   - There exists... a map? to keep track of relations
     - could incorporate databases and keys to retrieve the info
   - Shared functionality across files/folders (dragging, renaming, etc)
+- No dude, just have a File interface and Folder interface and each new file/folder pulls from that and has shared functionality, and home page has each folder as its own object and folders have files as their own objects.
