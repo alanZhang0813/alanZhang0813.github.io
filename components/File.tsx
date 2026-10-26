@@ -1,8 +1,11 @@
 "use client";
 
-import React from "react";
+interface FileProps {
+  name: string;
+  type: string;
+}
 
-export default function File() {
+export const File = ({ name, type }: FileProps) => {
   const handleClick = () => {
     alert("Box clicked!");
   };
@@ -13,9 +16,10 @@ export default function File() {
       tabIndex={0}
       style={{ width: "200px", height: "200px" }}
     >
-      File name
+      {name}
+      {type && <span>{type}</span>}
       {/* <FileIcon /> */}
       {/* add where the title is slightly below the icon */}
     </div>
   );
-}
+};

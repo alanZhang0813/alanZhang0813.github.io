@@ -2,9 +2,14 @@
 
 import React from "react";
 import { colors } from "../constants/colors";
-import File from "./File";
+import { File } from "./File";
 
-export default function Folder() {
+interface FolderProps {
+  name: string;
+  files: File[];
+}
+
+export const Folder = ({ name, files }: FolderProps) => {
   const handleClick = () => {
     alert("Box clicked!");
   };
@@ -24,9 +29,9 @@ export default function Folder() {
         justifyContent: "center",
       }}
     >
-      Folder name
+      {name}
       {/* <FolderIcon /> */}
       {/* add where the title is slightly below the icon */}
     </div>
   );
-}
+};
