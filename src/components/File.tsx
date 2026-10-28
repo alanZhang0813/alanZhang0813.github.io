@@ -1,6 +1,6 @@
 "use client";
 
-interface FileProps {
+export interface FileProps {
   name: string;
   type: string;
 }

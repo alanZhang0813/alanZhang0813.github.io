@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import { colors } from "../constants/colors";
-import { File } from "./File";
+import { colors } from "../../constants/colors";
+import { File, FileProps } from "./File";
 
-interface FolderProps {
+export interface FolderProps {
   name: string;
-  files: File[];
+  files: FileProps[];
 }
 
 export const Folder = ({ name, files }: FolderProps) => {
@@ -32,6 +32,10 @@ export const Folder = ({ name, files }: FolderProps) => {
       {name}
       {/* <FolderIcon /> */}
       {/* add where the title is slightly below the icon */}
+      {/* TODO: only show files when the folder is open */}
+      {files.map((file) => (
+        <File key={file.name} {...file} />
+      ))}
     </div>
   );
 };
