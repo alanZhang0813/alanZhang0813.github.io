@@ -1,29 +1,23 @@
-"use client";
-
+import Link from "next/link";
 import type { File } from "../types/File";
 
-export const FileTile = ({ name, type }: File) => {
-  const handleClick = () => {
-    alert(`${name} clicked!`);
-  };
+type FileTileProps = Pick<File, "name" | "type"> & { href: string };
 
-  return (
-    <div
-      onClick={handleClick}
-      tabIndex={0}
-      style={{
-        width: "200px",
-        height: "200px",
-        cursor: "pointer",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      {/* <FileIcon /> */}
-      <span>{name}</span>
-      <span>{type}</span>
-    </div>
-  );
-};
+export const FileTile = ({ name, type, href }: FileTileProps) => (
+  <Link
+    href={href}
+    style={{
+      width: "200px",
+      height: "200px",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      color: "inherit",
+      textDecoration: "none",
+    }}
+  >
+    <span>{name}</span>
+    <span>{type}</span>
+  </Link>
+);

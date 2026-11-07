@@ -1,32 +1,28 @@
-import { Folder } from "../types/Folder";
+import Link from "next/link";
 import { colors } from "../../constants/colors";
-import { WorkExperienceFolder } from "../components/folders/WorkExperienceFolder";
-import { HobbiesFolder } from "../components/folders/HobbiesFolder";
-import { EducationFolder } from "../components/folders/EducationFolder";
-import { ProjectsFolder } from "../components/folders/ProjectsFolder";
-
-const folders: Folder[] = [
-  WorkExperienceFolder,
-  HobbiesFolder,
-  EducationFolder,
-  ProjectsFolder,
-];
+import { FileTile } from "../components/FileTile";
+import { folders, folderHref, fileHref } from "../lib/folders";
 
 export default function HomeScreenPage() {
   return (
-    <main style={{ padding: "20px" }} color={colors.homeScreenColor}>
+    <main style={{ padding: "20px", backgroundColor: colors.homeScreenColor }}>
       <h1>Welcome to Alan Zhang's Website!</h1>
       {folders.map((folder) => (
-        <div key={folder.name}>
-          <h2>{folder.name}</h2>
-          <ul>
+        <section key={folder.name}>
+          <h2>
+            <Link href={folderHref(folder)}>{folder.name}</Link>
+          </h2>
+          <div style={{ display: "flex", flexWrap: "wrap" }}>
             {folder.files.map((file) => (
-              <li key={file.name}>
-                {file.view ?? `${file.name} - ${file.type}`}
-              </li>
+              <FileTile
+                key={file.name}
+                name={file.name}
+                type={file.type}
+                href={fileHref(folder, file.name)}
+              />
             ))}
-          </ul>
-        </div>
+          </div>
+        </section>
       ))}
     </main>
   );
