@@ -26,4 +26,4 @@ export const findFolder = (slug: string) =>
   folders.find((f) => slugify(f.name) === slug);
 
 export const findFile = (folder: Folder, slug: string) =>
-  folder.files.find((f) => slugify(f.name) === slug);
+  folder.children.find((f) => slugify(f.name) === slug);

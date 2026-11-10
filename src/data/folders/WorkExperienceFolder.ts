@@ -5,5 +5,6 @@ import { SaintGobain } from "../files/SaintGobain";
 
 export const WorkExperienceFolder: Folder = {
   name: "Work Experience",
-  files: [UKG, FactSet, SaintGobain],
+  children: [UKG, FactSet, SaintGobain],
+  type: "folder",
 };

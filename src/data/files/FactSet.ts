@@ -1,3 +1,7 @@
-import type { File } from "../../types/File";
+import type { TextFile } from "../../types/File";
 
-export const FactSet: File = { name: "FactSet", type: "document" };
+export const FactSet: TextFile = {
+  name: "FactSet",
+  type: "text",
+  body: "Sep 2025 - Dec 2025",
+};

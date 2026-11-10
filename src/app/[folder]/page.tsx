@@ -23,7 +23,7 @@ export default async function FolderPage({
       <Link href="/">← Home</Link>
       <h1>{folder.name}</h1>
       <div style={{ display: "flex", flexWrap: "wrap" }}>
-        {folder.files.map((file) => (
+        {folder.children.map((file) => (
           <FileTile
             key={file.name}
             name={file.name}

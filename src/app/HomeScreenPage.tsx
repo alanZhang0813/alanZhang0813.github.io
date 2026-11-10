@@ -12,16 +12,16 @@ export default function HomeScreenPage() {
           <h2>
             <Link href={folderHref(folder)}>{folder.name}</Link>
           </h2>
-          <div style={{ display: "flex", flexWrap: "wrap" }}>
-            {folder.files.map((file) => (
+          {/* <div style={{ display: "flex", flexWrap: "wrap" }}>
+            {folder.children.map((file) => (
               <FileTile
                 key={file.name}
                 name={file.name}
-                type={file.type}
                 href={fileHref(folder, file.name)}
+                type={file.type}
               />
             ))}
-          </div>
+          </div> */}
         </section>
       ))}
     </main>

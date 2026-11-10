@@ -1,6 +1,8 @@
 import type { Folder } from "../../types/Folder";
+import { Northeastern } from "../files/Northeastern";
 
 export const EducationFolder: Folder = {
   name: "Education",
-  files: [],
+  children: [Northeastern],
+  type: "folder",
 };

@@ -1,3 +1,7 @@
-import type { File } from "../../types/File";
+import type { TextFile } from "../../types/File";
 
-export const SaintGobain: File = { name: "Saint-Gobain", type: "document" };
+export const SaintGobain: TextFile = {
+  name: "Saint-Gobain",
+  type: "text",
+  body: "June 2024 - Dec 2024",
+};

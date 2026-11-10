@@ -12,7 +12,7 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   return folders.flatMap((folder) =>
-    folder.files.map((file) => ({
+    folder.children.map((file) => ({
       folder: slugify(folder.name),
       file: slugify(file.name),
     })),
@@ -33,7 +33,20 @@ export default async function FilePage({
     <main style={{ padding: "20px" }}>
       <Link href={folderHref(folder)}>← {folder.name}</Link>
       <h1>{file.name}</h1>
-      <p>{file.type}</p>
+      {(() => {
+        switch (file.type) {
+          case "text":
+            return <p>{file.body}</p>;
+          case "link":
+            return <p>{file.url}</p>;
+          case "image":
+            return <img src={file.url} alt={file.name} />;
+          case "pdf":
+            return <p>{file.url}</p>;
+          case "folder":
+            return notFound();
+        }
+      })()}
     </main>
   );
 }

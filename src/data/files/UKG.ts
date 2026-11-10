@@ -1,3 +1,7 @@
-import type { File } from "../../types/File";
+import type { TextFile } from "../../types/File";
 
-export const UKG: File = { name: "UKG", type: "document" };
+export const UKG: TextFile = {
+  name: "UKG",
+  type: "text",
+  body: "May 2025 - Aug 2025",
+};
