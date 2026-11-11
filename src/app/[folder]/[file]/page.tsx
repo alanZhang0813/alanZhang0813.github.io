@@ -42,7 +42,22 @@ export default async function FilePage({
           case "image":
             return <img src={file.url} alt={file.name} />;
           case "pdf":
-            return <p>{file.url}</p>;
+            return (
+              <>
+                <iframe
+                  title={file.name}
+                  src={file.url}
+                  width="100%"
+                  height="600px"
+                />
+                <a href={file.url} target="_blank" rel="noopener noreferrer">
+                  Open PDF in new tab
+                </a>
+                <a href={file.url} download>
+                  Download PDF
+                </a>
+              </>
+            );
           case "folder":
             return notFound();
         }
