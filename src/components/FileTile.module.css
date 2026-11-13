@@ -1,0 +1,23 @@
+.tile {
+    position: relative;
+    transition: background 0.5s;
+}
+.tile:hover {
+    background: #e8f0fe;
+}
+.preview {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid black;
+    padding: 4px;
+    z-index: 1;
+    min-width: 10px;
+}
+.tile:hover .preview {
+    display: block;
+    background: white;
+    outline: 1px solid black;
+}
